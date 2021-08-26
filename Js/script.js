@@ -25,10 +25,10 @@ for ( var i = 0; i < 2; i++ ) {
 
     // 4. Filtrare gli input dati dall'utente e assegnarli all' array
     if (dato[i] % 2 == 1) {
-        array [i] = (dato[i]);
+        array.push(dato[i]);
         booleana = 1;
     }
-    console.log( "Il valore singolo di array è " + array[i]);
+    console.log( "Il valore singolo di array è " + array);
 }
 console.log(booleana);
 
@@ -37,6 +37,6 @@ if (booleana==0) {
     console.log("L'array è vuoto!");
     alert("L'array è vuoto!");
 } else {
-    console.log("Il valore totale di array è " + array);
+    console.log("Il valore totale di array è: " + array);
     alert("Il valore totale di array è " + array);
 }
