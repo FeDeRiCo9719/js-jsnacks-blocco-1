@@ -6,27 +6,26 @@
 // 4. Filtrare gli input dati dall'utente e assegnarli all' array (se tra gli input ci sono numeri dispari = if input % 2 = 1 allora..  )
 // 5. Stampare l' Output dei possibili casi
 
-
 // 1. Array vuoto, array di supporto e variabile di controllo
 var array = [];
-var supporto = [];
+var dato = [];
 var booleana = 0;
 
 // 2. Chiedere 6 volte l'inserimento di un numero casuale (prompt *6 = ciclo definito *6)
 for ( var i = 0; i < 2; i++ ) {
 
-    supporto[i] = (parseInt(prompt("inserisci un numero casuale")));
+    dato[i] = (parseInt(prompt("inserisci un numero casuale")));
 
     // 3. Verificare che il dato inserito sia un numero
-    while (isNaN(supporto[i])) {
+    while (isNaN(dato[i])) {
         alert("carattere non valido, riprova");
-        supporto[i] = (parseInt(prompt("inserisci un numero casuale")));
+        dato[i] = (parseInt(prompt("inserisci un numero casuale")));
     }
-    alert("Il numero inserito è " + supporto[i]);
+    alert("Il numero inserito è " + dato[i]);
 
     // 4. Filtrare gli input dati dall'utente e assegnarli all' array
-    if (supporto[i] % 2 == 1) {
-        array [i] = (supporto[i]);
+    if (dato[i] % 2 == 1) {
+        array [i] = (dato[i]);
         booleana = 1;
     }
     console.log( "Il valore singolo di array è " + array[i]);
